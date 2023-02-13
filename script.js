@@ -1,6 +1,6 @@
 window.onload = displayBooks;
 
-const submitBtn = document.querySelector(".submit-btn");
+const bookForm = document.querySelector(".book-form");
 const bookContainer = document.querySelector(".book-container");
 
 let books = [
@@ -54,7 +54,7 @@ function addBook() {
     pages.value = "";
 }
 
-submitBtn.addEventListener("click", e => {
+bookForm.addEventListener("submit", e => {
     e.preventDefault();
     addBook();
     displayBooks();
