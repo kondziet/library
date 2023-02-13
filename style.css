@@ -21,9 +21,21 @@ main {
 }
 
 main .left-container {
+    display: flex;
+    justify-content: center;
     width: 30%;
     min-width: 400px;
     background-color: rgb(122, 68, 68);
+}
+
+.book-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.book-form .submit-btn {
+    margin: 20px;
 }
 
 main .right-container {
